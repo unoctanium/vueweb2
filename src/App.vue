@@ -1,14 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
+
+  <div id="app">
+  
+    <img alt="Vue logo" src="@/assets/logos/logo-vue.svg" />
+ <!-- <HelloWorld msg="Hello Vue 3 in CodeSandbox!" /> -->
+    <Navbar />
+    <router-view />
+  </div>
+  
 </template>
 
 <script>
-import HelloWorldVue from "./components/HelloWorld.vue";
+import Navbar from "@/components/Navbar.vue";
+//import HelloWorldVue from "./components/HelloWorld.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld: HelloWorldVue,
+    //HelloWorld: HelloWorldVue,
+    Navbar, // register component
   },
 };
 </script>
