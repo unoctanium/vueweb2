@@ -1,10 +1,10 @@
 <template>
   <div>
-    About
+    NotFound
   </div>
 </template>
 
-<script>
+<script setup>
 </script>
 
 <style scoped>
